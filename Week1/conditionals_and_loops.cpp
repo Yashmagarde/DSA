@@ -9,7 +9,7 @@ int main(){
     //         cout<<"* ";
     //     }
     //     cout<<endl;
-    // }
+    // }J
 
 
     //rectangle
