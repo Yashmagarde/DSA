@@ -4,7 +4,8 @@ using namespace std;
 int main(){
     int val;
     cin>>val;
-    int n= val;
+    // int n= (val/2)+1;
+    int n=val;
 
     //full pyramid
     // for(int i=0;i<n;i++){
@@ -17,8 +18,28 @@ int main(){
     //     cout<<endl;
     // }
 
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+
 
     //inverted full pyramid
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+
     // for(int i=0;i<n;i++){
     //     for(int j=0;j<i;j++){
     //         cout<<" ";
@@ -50,6 +71,25 @@ int main(){
     //     cout<<endl;
     // }
 
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+
 
     //hollow full pyramid
     // for(int i=0;i<n;i++){
@@ -67,6 +107,25 @@ int main(){
     //     cout<<endl;
     // }
 
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         if(j==0 || j==i){
+    //             cout<<"* ";
+    //         }
+    //         else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+
+
+    // hollow inverted pyramid
+
     // for(int i=0;i<n;i++){
     //     for(int j=0;j<i;j++){
     //         cout<<" ";
@@ -74,6 +133,21 @@ int main(){
     //     for(int j=0;j<n-i;j++){
     //         if(j==0 || j== n-i-1){
     //             cout<<"* ";
+    //         }
+    //         else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         if(j==0 || j==n-i-1){
+    //         cout<<"* ";
     //         }
     //         else{
     //             cout<<"  ";
@@ -115,6 +189,8 @@ int main(){
     // }
 
 
+    //pattern 01 (notes)
+
     // for(int i=0 ;i<n;i++){
     //     for(int j=0;j<n-i;j++){
     //         cout<<"* ";
@@ -142,6 +218,35 @@ int main(){
 
     // }
 
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"*";
+    //     }
+    //     for(int j=0;j<2*i+1;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"*";
+    //     }
+    //     for(int j=0;j<2*n-2*i-1;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Pattern 02 (notes)
+
     // for(int i=0;i<n;i++){
     //     for(int j=0;j<(2*i)+1;j++){
     //         if(j%2==0){
@@ -150,11 +255,39 @@ int main(){
     //         else{
     //             cout<<"*";
     //         }
-
-
     //     }
     //     cout<<endl;
     // }
+
+
+    // // int count =1;
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<2*i+1;j++){
+    //         if(j%2==0){
+    //             // cout<<count;
+    //             cout<<i+1;
+    //         }else{
+    //             cout<<"*";
+    //         }
+    //     }
+    //     // count++;
+    //     cout<<endl;
+    // }
+    // // count = count -1;
+    // for(int i=0;i<n-1;i++){
+    //     // --count;
+    //     for(int j=0;j<2*(n-1)-2*i-1;j++){
+    //         if(j%2==0){
+    //             // cout<<count;
+    //             cout<<n-i-1;
+    //         }else{
+    //             cout<<"*";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+
+
 
     
 
@@ -177,6 +310,22 @@ int main(){
     //     cout<<endl;
     // }
 
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         if(j==0 || j== n-i-1 || i==0 || i==n-1){
+    //         cout<<"* ";
+    //         }
+    //         else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+
+    // }
+
+
+    //pateern 03(notes)
 
     // for(int i=0;i<n;i++){
     //     char ch;
@@ -212,7 +361,23 @@ int main(){
     //     cout<<endl;
     // }
 
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         if(i==0 || i==n-1 || j==0 || j== n-i-1){
+    //             cout<<i+j+1;
+    //         }
+    //         else{
+    //             cout<<" ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+
+
+
     //numeric palindrome eqilatral pyramid
+
     // for(int i=0;i<n;i++){
     //     for(int j=0;j<n-i-1;j++){
     //         cout<<" ";
@@ -228,6 +393,25 @@ int main(){
     //     }
     //     cout<<endl;
     // }
+
+
+    // for(int i=0;i<n;i++){
+    //     int count = 1;
+    //     for(int j=0;j<n-i-1;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<count;
+    //         count++;
+    //     }
+    //     for(int j=count-2;j>0;j--){
+    //         cout<<j;
+    //     }
+    //     cout<<endl;
+    // }
+
+
+    //pattern 04(notes)
 
 
     // for(int i=0;i<n;i++){
@@ -249,6 +433,27 @@ int main(){
     // }
 
 
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<2*n-i-2;j++){
+    //         cout<<"*";
+    //     }
+    //     for(int j=0;j<2*i+1;j++){
+    //         if(j%2==0){
+    //             cout<<i+1;
+    //         }
+    //         else{
+    //             cout<<"*";
+    //         }
+
+    //     }
+    //     for(int j=0;j<2*n-i-2;j++){
+    //     cout<<"*";
+
+    //     }
+    //     cout<<endl;
+    // }
+
+
     //solid half diamond
     // for(int i=0;i<n;i++){
     //     for(int j=0;j<i+1;j++){
@@ -263,6 +468,23 @@ int main(){
     //     cout<<endl;
     // }
 
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"*";
+    //     }
+        
+    //     cout<<endl;
+    // }
+    //  for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<n-1-i;j++){
+    //         cout<<"*";
+    //     }
+        
+    //     cout<<endl;
+    // }
+
+   
+
 
     //floyd triangle
     // int num =1;
@@ -274,7 +496,43 @@ int main(){
     //     cout<<endl;
     // }
 
+    // int count =1;
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<count;
+    //         count++;
+    //     }
+    //     cout<<endl;
+    // }
+
     //butterfly pattern
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"*";
+    //     }
+    //     for(int j=0;j<2*n-2*i-2;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //  for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"*";
+    //     }
+    //     for(int j=0;j<(2*i);j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
 
     for(int i=0;i<n;i++){
         for(int j=0;j<i+1;j++){
@@ -289,18 +547,20 @@ int main(){
         cout<<endl;
     }
 
-     for(int i=0;i<n;i++){
-        for(int j=0;j<n-i;j++){
-            cout<<"*";
-        }
-        for(int j=0;j<(2*i);j++){
-            cout<<" ";
-        }
-        for(int j=0;j<n-i;j++){
-            cout<<"*";
-        }
-        cout<<endl;
-    }
+
+        
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"*";
+    //     }
+    //     for(int j=0;j<2*i;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
 
 
 
