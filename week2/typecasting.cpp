@@ -21,6 +21,7 @@ int main(){
 
 
     //Explicit datatype conversion
+    
     //float to num
     // int num1=10;
     // float num2=5.5;
