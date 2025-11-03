@@ -75,6 +75,16 @@ using namespace std;
 // }
 
 
+//sum of all number upto n
+
+// void sumofnumbers(int n){
+//     int sum =0;
+//     for(int i=1;i<=n;i++){
+//         sum=sum+i;
+//     }
+//     cout<<"sum of numbers from 1 to "<<n<<" is "<<sum;
+// }
+
 
 //sum of all even number
 // void sumofeven(int n){
@@ -119,9 +129,13 @@ using namespace std;
 
 
 int main(){
+
+    //fuction call
+    // printline();
     // cout<<"hi"<<endl;
     
     // printA();
+
     // int a,b,c;
     // cout<<"enter three numbers:"<<endl;
     // cin>>a>>b>>c;
@@ -142,6 +156,9 @@ int main(){
 
 
     // checkEvenOdd(4874);
+
+
+    // sumofnumbers(3);
 
 
     //sum of even
@@ -166,7 +183,7 @@ int main(){
 
 
 
-    primenumber(16);
+    // primenumber(16);
 
 
     
