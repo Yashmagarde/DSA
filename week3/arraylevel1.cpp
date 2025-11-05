@@ -49,6 +49,37 @@ using namespace std;
 
 // }
 
+//using min function
+
+// void minimumnumber(int arr[],int size){
+//     int minimum = INT_MAX;
+//     for(int i=0;i<size;i++){
+//        minimum = min(minimum,arr[i]);
+//     }
+//     cout<<minimum;
+
+// }
+
+
+// void maximumnumber(int arr[],int size){
+//     int max = INT_MIN;
+//     for(int i=0;i<size;i++){
+//         if(arr[i]>max){
+//             max = arr[i];
+//         }
+//     }
+//     cout<<"max number: "<<max;
+// }
+
+//using max function
+
+// void maximumnumber(int arr[],int size){
+//     int maxi = INT_MIN;
+//     for(int i=0;i<size;i++){
+//         maxi = max(arr[i],maxi);
+//     }
+//     cout<<"max number: "<<maxi;
+// }
 
 
 
@@ -71,25 +102,29 @@ using namespace std;
 
 
 
-void extremeprint(int arr[],int size){
-    int left =0;
-    int right =size-1;
-    while(left<=right){
-        if(left==right){
-             cout<<arr[left]<<" ";
-             left++;
-        right--;
+// void extremeprint(int arr[],int size){
+//     int left =0;
+//     int right =size-1;
+//     while(left<=right){
+//         if(left==right){
+//              cout<<arr[left]<<" ";
+//              left++;
+//         right--;
 
-        }
-        else{
-        cout<<arr[left]<<" ";
-        cout<<arr[right]<<" ";
-        left++;
-        right--;
-        }
+//         }
+//         else{
+//         cout<<arr[left]<<" ";
+//         cout<<arr[right]<<" ";
+//         left++;
+//         right--;
+//         }
 
-    }
-}
+//     }
+// }
+
+
+
+
 
 
 
@@ -106,16 +141,24 @@ int main(){
     //addressof operator
 
     // int a=5;
-    // cout<<"address of arr is:"<<&a<<endl;
+    // cout<<"address of a is:"<<&a<<endl;
+    // cout<<"size of a is:"<<sizeof(a)<<endl;
+
 
     // int arr[10];
-    // cout<<"address of arr is:"<<&arr;
+    // cout<<"Base address of arr is:"<<&arr;
+    // cout<<"Base address of arr is:"<<arr;
+    // cout<<"size of a is:"<<sizeof(arr)<<endl;
+
+
+
+    //array initialization
 
 
     // int arr[] = {1,23,3,6};
     // int brr[5] = {1,2,3,4,5};
     // int crr[5] ={1,2};
-    // int drr[2] = {1,3,4,5,6};
+    // int drr[2] = {1,3,4,5,6}; //error
 
 
 
@@ -226,8 +269,6 @@ int main(){
 
 
 
-
-
     //zero one counter
 
     // int arr[10]={0,1,1,0,1,0,1,0,0,1};
@@ -243,8 +284,17 @@ int main(){
     // minimumnumber(arr,size);
 
 
+    //maximum number in an array
+
+    // int arr[10]={78,200,333,633,722,274,222,33,93,37};
+    // int size=10;
+    // maximumnumber(arr,size);
+
+
 
     //reverse an array
+
+    //not taught by bhiaya i have done it 
 
     // int arr[6] ={10,20,30,40,50,60};
     // int size =6;
@@ -261,7 +311,7 @@ int main(){
 
 
 
-    //using swap
+    //using swap (this is the correct method)
 
     // int arr[6] ={10,20,30,40,50,60};
     // int size =6;
@@ -274,19 +324,11 @@ int main(){
 
     //extream print in an array
 
-    int arr[11]={1,2,3,4,5,6,7,8,9,10,11};
-    int size =11;
-    extremeprint(arr,size);
-   
-
+    // int arr[11]={1,2,3,4,5,6,7,8,9,10,11};
+    // int size =11;
+    // extremeprint(arr,size);
     
-
-
-
-
-
-
-
+    
 
     return 0;
 }
