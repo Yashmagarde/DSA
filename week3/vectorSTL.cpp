@@ -2,17 +2,23 @@
 #include<vector>
 using namespace std;
 
-// void printvector(vector<int>v){
-//     int size = v.size();
+void printvector(vector<int>v){
+    int size = v.size();
 
-//     for(int i=0;i<size;i++){
-//         // cout<<v[i]<<" ";
-//         cout<<v.at(i)<<" ";  // dono me same results honge
-//     }
+    for(int i=0;i<size;i++){
+        // cout<<v[i]<<" ";
+        cout<<v.at(i)<<" ";  // dono me same results honge
+    }
+}
 
 
-// }
+void printvector2(vector<int>v){
+   
 
+    for(auto i:v){
+        cout<<i<<endl;
+    }
+}
 
 int main(){
     //static allocation of arrray
@@ -36,6 +42,7 @@ int main(){
 
     // vector<int>v;
 
+
     // v.push_back(1);
     // v.push_back(2);
     // v.push_back(3);
@@ -52,12 +59,6 @@ int main(){
     //i want clear full vector
     // v.clear();
     // printvector(v);
-
-
-   
-
-
-
 
     //size and capacity
 
@@ -77,24 +78,29 @@ int main(){
     // vector<int>arr3 ={1,2,3,4,5}; //new way not every compiler support it
     // vector<int>arr4{1,2,3,4,5}; //new way not every compiler support it
     
+
+    //copy vector
+    // vector<int>arr5={1,2,3,4,5};
+    // vector<int>arr6(arr5);
+    // printvector(arr6);
+
+
+    //front and back element
+    // vector<int>arr={1,2,3,4,5};
+    // cout<<arr[0];
+    // cout<<arr.front();
+    // cout<<arr[arr.size()-1];
+    // cout<<arr.back();
+
+
+
+    //printing using auto for each loop
+
+    // vector<int>arr={1,2,3,4,5,6,7,8};
+    // printvector2(arr);
+
+
     // return 0;
 
 
-
-
-    int arr[8] = {2,4,0,3,0,1,0,1};
-    int size =8;
-    for(int i=0;i<size;i++){
-        if(arr[i]==0){
-            for(int j =i;j<size;j++){
-                arr[j] = arr[j+1];
-
-            }
-            arr[size-1] =0;
-
-        }
-    }
-    for(int i=0;i<size;i++){
-        cout<<arr[i]<<" ";
-    }
 }
