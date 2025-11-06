@@ -22,6 +22,8 @@ void colwiseprint(int arr[][4],int row,int col){
     }
 }
 
+
+
 bool linearsearch(int arr[][3],int row,int col,int target){
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
@@ -112,11 +114,24 @@ int main(){
     //     {9,10,11,12}
     // };
  
+
+    //atleast number of columns batana padega (c*i+j)=> iski wajah se 
+
+    // int arr[][4] = {
+    //     {1,2,3,4},
+    //     {5,6,7,8},
+    //     {9,10,11,12}
+    // };
+
+
+    //print array
+
     // int arr[3][4] = {
     //     {1,2,3,4},
     //     {5,6,7,8},
     //     {9,10,11,12}
     // };
+ 
 
     // int row =3;
     // int col=4;
@@ -139,6 +154,9 @@ int main(){
     // }
     // printarray(arr,row,col);
 
+
+
+    //linear seraching
 
     // int arr[3][3] = {{10,20,30},{40,50,60},{70,80,90}};
 
@@ -167,6 +185,10 @@ int main(){
     // int maxnum = maxfinder(arr,row,col);
     // cout<<maxnum;
     
+
+
+    //find min
+
     // int minnum = minfinder(arr,row,col);
     // cout<<minnum;
 
@@ -237,30 +259,30 @@ int main(){
 
     // jagged array
 
-    vector<vector<int>>brr;
+    // vector<vector<int>>brr;
 
     
 
-    vector<int>vec1(5,-1);
-    vector<int>vec2(8,0);
-    vector<int>vec3(12,-13);
-    vector<int>vec4(9,-10);
-    vector<int>vec5(10,-7);
+    // vector<int>vec1(5,-1);
+    // vector<int>vec2(8,0);
+    // vector<int>vec3(12,-13);
+    // vector<int>vec4(9,-10);
+    // vector<int>vec5(10,-7);
 
-    brr.push_back(vec1);
-    brr.push_back(vec2);
-    brr.push_back(vec3);
-    brr.push_back(vec4);
-    brr.push_back(vec5);
+    // brr.push_back(vec1);
+    // brr.push_back(vec2);
+    // brr.push_back(vec3);
+    // brr.push_back(vec4);
+    // brr.push_back(vec5);
 
 
-    for(int i=0;i<brr.size();i++){
-        for(int j=0;j<brr[i].size();j++){
-            cout<<brr[i][j]<<" ";
+    // for(int i=0;i<brr.size();i++){
+    //     for(int j=0;j<brr[i].size();j++){
+    //         cout<<brr[i][j]<<" ";
 
-        }
-        cout<<endl;
-    }
+    //     }
+    //     cout<<endl;
+    // }
 
 
     return 0;
