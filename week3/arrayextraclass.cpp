@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 void sortnegpos(int arr[],int size){
@@ -50,9 +51,41 @@ int main(){
 
     //Leetcode 75 - Sort Colors;
 
-    vector<int>nums ={2,0,2,1,1,0};
-    sortcolors(nums);
-    for(int i=0;i<nums.size();i++){
-        cout<<nums[i]<<" ";
-    }
+    // vector<int>nums ={2,0,2,1,1,0};
+    // sortcolors(nums);
+    // for(int i=0;i<nums.size();i++){
+    //     cout<<nums[i]<<" ";
+    // }
+
+//     Rotate Array (Leetcode - 189)
+
+// Missing Number (Leetcode - 268)
+
+// Rearrange Array Elements by Sign (Leetcode - 2149)
+
+// Row With Maximum Ones (Leetcode - 2643)
+
+// Rotate Image (Leetcode - 48)
+
+
+
+
+
+
+
+
+
+
+
+    //reverse utility function of <algorithm>
+
+    // vector<int>arr={1,2,3,4,5,6};
+    // int size = arr.size();
+    // int arr[6]={1,2,3,4,5,6};
+    // int size =6;
+    // reverse(arr.begin(),arr.end());
+    // reverse(arr,arr+size);
+    // for(int i=0;i<size;i++){
+    //     cout<<arr[i]<<" ";
+    // }
 }

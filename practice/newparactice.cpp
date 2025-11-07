@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
 
 int main(){
@@ -15,6 +17,18 @@ int main(){
 
 
     // }
+
+    vector<int>arr={1,2,3,4,5,6};
+    // int size = arr.size();
+    // int arr[6]={1,2,3,4,5,6};
+    // int size =6;
+    // reverse(arr.begin(),arr.end());
+    // reverse(arr,arr+size);
+    // for(int i=0;i<size;i++){
+    //     cout<<arr[i]<<" ";
+    // }
+
+
 
 
 
