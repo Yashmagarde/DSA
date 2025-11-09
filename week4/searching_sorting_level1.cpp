@@ -4,7 +4,8 @@ using namespace std;
 int binarysearch(int arr[],int n, int target){
     int start = 0;
     int end = n-1;
-    int mid = (start+end)/2;
+    // int mid = (start+end)/2;
+    int mid = start +(end-start)/2;
     while(start <= end ){
         if(target == arr[mid]){
             return mid;
@@ -16,7 +17,7 @@ int binarysearch(int arr[],int n, int target){
             end = mid -1;
 
         }
-        mid = (start+end)/2;
+        mid = start +(end-start)/2;
     }
 
     return -1;
@@ -26,7 +27,8 @@ int binarysearch(int arr[],int n, int target){
 int  firstOccurence(int arr[], int n,int target){
     int s=0;
     int e=n-1;
-    int mid=(s+e)/2;
+    // int mid=(s+e)/2;
+    int mid = s +(e-s)/2;
     int ans =-1;
 
     while(s<=e){
@@ -40,7 +42,8 @@ int  firstOccurence(int arr[], int n,int target){
         else if(target < arr[mid]){
             e = mid-1;
         }
-        mid = (s+e)/2;
+        mid = s+(e-s)/2;
+
     }
     return ans;
 }
@@ -49,7 +52,8 @@ int  firstOccurence(int arr[], int n,int target){
 int lastOccurence(int arr[],int n,int target){
     int s=0;
     int e=n-1;
-    int mid = (s+e)/2;
+    // int mid = (s+e)/2;
+    int mid = s +(e-s)/2;
     int ans =-1;
 
     while(s<=e){
@@ -64,10 +68,13 @@ int lastOccurence(int arr[],int n,int target){
             e=mid-1;
         }
 
-        mid=(s+e)/2;
+        mid = s+(e-s)/2;
+        
     }
     return ans;
 }
+
+
 
 
 int totaloccurence(int arr[],int n,int target){
@@ -82,7 +89,9 @@ int totaloccurence(int arr[],int n,int target){
 int findmissing(int arr[],int n){
     int s=0;
     int e=n-1;
-    int mid =(s+e)/2;
+    // int mid =(s+e)/2;
+    int mid = s +(e-s)/2;
+
     int ans=-1;
     while(s<=e){
         if(arr[mid]-mid==1){
@@ -116,7 +125,7 @@ int main(){
     // }
 
 
-    //first occurence nikalo
+    // first occurence nikalo
 
     // int arr[] = {10,20,30,30,30,30,40,50};
     // int n=8;
@@ -139,7 +148,6 @@ int main(){
     // int target = 30;
 
     // int ans = lastOccurence(arr,n,target);
-    
 
     // if(ans ==-1){
     //     cout<<"element not found";
@@ -162,12 +170,16 @@ int main(){
 
     // find missing element in sorted array
 
-    int arr[] ={1,2,3,4,5,6,7,8};
-    int n=8;
+    // int arr[] ={1,2,3,4,5,6,7,8};
+    // int n=8;
 
-    int ans = findmissing(arr,n);
-    cout<<ans;
+    // int ans = findmissing(arr,n);
+    // cout<<ans;
 
 
-    return 0;
+    // return 0;
+
+
+
+    // Leetcode 852 - peak index in a mountain array
 }
