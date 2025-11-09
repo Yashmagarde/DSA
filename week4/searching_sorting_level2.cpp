@@ -11,10 +11,10 @@ int pivotfinder(int arr[],int n){
             return s;
         }
         
-         else if(arr[mid]>arr[mid+1]){
+         else if(mid+1<n && arr[mid]>arr[mid+1]){
             return mid;
         }
-         else if(arr[mid]<arr[mid-1]){
+         else if(mid-1>0 && arr[mid]<arr[mid-1]){
             return mid-1;
         }
        
@@ -39,11 +39,6 @@ int main(){
 
     int indexofpivot = pivotfinder(arr,n);
     cout<<"pivot index:"<<indexofpivot;
-
-    
-
-
-
 
     return 0;
 }
