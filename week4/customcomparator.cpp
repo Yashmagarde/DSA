@@ -19,9 +19,13 @@ void printvv(vector<vector<int>>&v){
 
 }
 
+bool mycompforfirstindex(vector<int>&a,vector<int>&b){
+    return a[1]<b[1];
+}
+
 int main(){
     // vector<int>v={55,63,35,86,25,94,29,8};
-    // sort(v.begin(),v.end(),mycomp);
+    // sort(v.begin(),v.end(),mycomp);  // my comp batayega kaise sort karana hai
     // for(int i=0;i<v.size();i++){
     //     cout<<v[i]<<" ";
     // }
@@ -45,7 +49,12 @@ int main(){
     }
 
 
+
     printvv(v);
+    cout<<"Sorted by first index"<<endl;
+    sort(v.begin(),v.end(),mycompforfirstindex);
+    printvv(v);
+
 
 
 
