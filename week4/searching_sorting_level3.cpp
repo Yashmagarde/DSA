@@ -59,25 +59,28 @@ int getquotient(int divident,int divisor){
 // }
 
 
+
+
 int oddoccfinder(int arr[],int n){
     int s=0;
     int e=n-1;
     int mid=s+(e-s)/2;
-    int ans;
+
     while(s<=e){
         if(s==e){
             return s;
         }
-        if(mid%2==0){
+        else if(mid%2==0){
             if(mid+1<n && arr[mid]==arr[mid+1]){
                 s=mid+2;
             }
             else{
                 e=mid;
             }
+
         }
         else{
-            if(mid-1>=0 && arr[mid]==arr[mid-1]){
+            if(mid-1>0 && arr[mid]==arr[mid-1]){
                 s=mid+1;
             }
             else{
@@ -86,9 +89,8 @@ int oddoccfinder(int arr[],int n){
         }
         mid=s+(e-s)/2;
     }
-    return ans;
+    return -1;
 }
-
 
 
 int main(){
@@ -107,21 +109,21 @@ int main(){
 
     // find target in nearly sorted array
 
-    int arr[]={20,10,30,50,40,70,60};
-    int n=7;
-    int target =70;
+    // int arr[]={20,10,30,50,40,70,60};
+    // int n=7;
+    // int target =70;
 
-    int ans = targetfinder(arr,n,target);
-    cout<<"the index of the target element is:"<<ans;
+    // int ans = targetfinder(arr,n,target);
+    // cout<<"the index of the target element is:"<<ans;
 
 
     // find odd occuring number
 
-    // int arr[]={1,1,5,5,2,2,3,3,6,6,4};
-    // int n=11;
+    int arr[]={1,1,5,5,4,2,2,3,3,6,6};
+    int n=11;
     
-    // int ans = oddoccfinder(arr,n);
-    // cout<<ans;
+    int ans = oddoccfinder(arr,n);
+    cout<<ans;
 
 
 
